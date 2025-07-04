@@ -1,8 +1,10 @@
-import React from 'react'
+import styles from './footer.module.css';
 
-const Footer = () => {
+function Footer() {
   return (
-    <div>Footer</div>
+    <footer className={styles['app-footer']}>
+      © {new Date().getFullYear()} All Rights Reserved
+    </footer>
   )
 }
 

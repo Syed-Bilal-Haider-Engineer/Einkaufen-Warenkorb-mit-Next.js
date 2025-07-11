@@ -1,28 +1,37 @@
 .products {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
+  width: 100vw;
 }
 
 .wrapper {
-    text-align: center;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .wrapper h2 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .wrapper p {
-    max-width: 480px;
-    margin: auto;
-    margin-bottom: 40px;
+  max-width: 480px;
+  margin: auto;
+  margin-bottom: 40px;
 }
 
 .productsList {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style-type: none;
 }
 
 .wrapper button {
-    margin-top: 40px;
+  margin-top: 40px;
+  width: 200px;
+  height: 40px;
+  background-color: black;
+  padding: 2px;
+  color: white;
 }

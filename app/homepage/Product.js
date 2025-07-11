@@ -26,7 +26,6 @@ import { useEffect, useState } from 'react';
         <div className={styles.products}>
             <div className={`${styles.wrapper} container`}>
                 <h2>Highest Rated Products</h2>
-                
                 {productList.length > 0 ? (
                     <>
                         <p>

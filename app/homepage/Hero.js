@@ -1,3 +1,5 @@
+'use client';
+
 import styles from './hero.module.css';
 
 function Hero() {

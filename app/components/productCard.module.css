@@ -1,6 +1,8 @@
 .productCard {
   width: 240px;
-  background-color: var(--grey-color);
+  background-color: rgb(234, 231, 231);
+  border-radius: 4px;
+  
 }
 
 .productImage {

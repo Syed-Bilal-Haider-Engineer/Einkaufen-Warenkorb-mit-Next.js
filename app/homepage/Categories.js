@@ -1,17 +1,25 @@
+'use client';
+
+import { useEffect, useState } from 'react';
 import styles from './categories.module.css';
 import Link from 'next/link';
 
-async function Categories() {
-    let categories = [];
-    try {
-        const data = await fetch('https://dummyjson.com/products/categories')
-        if (!data.ok) {
-            throw new Error(`HTTP error! status: ${data.status}`);
+function Categories() {
+   const [categories,setCategories] = useState([])
+   useEffect(() => {
+        const fetchCategories = async() => {
+            try {
+                const data = await fetch('https://dummyjson.com/products/categories')
+                if (!data.ok) {
+                    throw new Error(`HTTP error! status: ${data.status}`);
+                }
+                setCategories(await data.json())
+            } catch (error) {
+                console.error('Failed to fetch products:', error);
+            }
         }
-        categories = await data.json();
-    } catch (error) {
-        console.error('Failed to fetch products:', error);
-    }
+        fetchCategories()
+   },[])
 
   return (
     <div className={styles.categories}>
